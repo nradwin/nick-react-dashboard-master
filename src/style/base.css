@@ -1,0 +1,38 @@
+.bg-home-image {
+  @apply bg-contain xl:bg-cover bg-no-repeat bg-[#E8ECF2];
+  background-image: url('/public/images/dashboard-background-image.png');
+
+  @media (max-width: 639px) {
+    background-size: 100% 180px;
+  }
+}
+
+.card-bg {
+  background-image: url('/public/images/svg/card-bg.svg');
+}
+
+/* webkit scrollbar */
+
+*::-webkit-scrollbar {
+  @apply w-1 h-1;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-gray-300;
+}
+
+/* charts */
+
+.recharts-legend-wrapper {
+  @apply !w-[90%];
+}
+
+.rechart-top-label {
+  text-anchor: end;
+  dominant-baseline: text-before-edge;
+  transform: translate(-5%, -40%);
+
+  @media (max-width: 639px) {
+    transform: translate(5%, -54%);
+  }
+}
